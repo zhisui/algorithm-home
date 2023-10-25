@@ -22,7 +22,6 @@ var NumMatrix = function (matrix) {
  * @return {number}
  */
 
-// 计算子矩阵 [x1, y1, x2, y2] 的元素和
 NumMatrix.prototype.sumRegion = function (row1, col1, row2, col2) {
     // 目标矩阵之和由四个相邻矩阵运算获得,注意题目中row和col是谁在前，谁在后
     return this.preSumArr[row2 + 1][col2 + 1] - this.preSumArr[row1][col2 + 1] - this.preSumArr[row2 + 1][col1] + this.preSumArr[row1][col1]
