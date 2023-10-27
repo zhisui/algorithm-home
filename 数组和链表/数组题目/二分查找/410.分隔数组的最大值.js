@@ -2,6 +2,7 @@
  * @param {number[]} nums
  * @param {number} k
  * @return {number}
+ * @see https://leetcode.cn/problems/split-array-largest-sum/
  */
 var splitArray = function (nums, k) {
 
