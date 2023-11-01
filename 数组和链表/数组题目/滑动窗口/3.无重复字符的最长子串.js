@@ -22,7 +22,7 @@ const lengthOfLongestSubstring = function (s) {
             //    收缩左侧窗口
             let d = s[left]
             left++
-            // 重复了就删除第一个，直到不重复为止，right才继续网后面走
+            // 重复了就删除第一个，直到不重复为止，right才继续往后面走
             window.set(d, window.get(d) - 1)
         }
         res = Math.max(res, right - left)
