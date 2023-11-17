@@ -71,3 +71,12 @@ Function.prototype.bind = function (context, ...arg) {
         }
     }
 }
+
+
+try {
+
+} catch (error) {
+
+} .finally (() => {
+    console.log('hello')
+})
